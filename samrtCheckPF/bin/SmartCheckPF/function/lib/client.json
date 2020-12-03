@@ -1,0 +1,40 @@
+{
+    "System": {
+        "local_config": false,
+        "debug": false,
+        "client_url": "http://127.0.0.1:8889/",
+        "gluepath_inspection_registration": true,
+        "normal_inspection_registration": true,
+        "gluepath_inspection_use_gpu": true,
+        "normal_inspection_use_gpu": false,
+        "new_project": false
+    },
+    "Detector": {
+        "CenterNet": {
+            
+        },
+        "YOLOv3": {
+            "BACK_BONE": "Darknet",
+            "DEVICE": "cpu",
+            "YOLO_INPUT_SIZE": 320,
+            "ORIGINAL_HEIGHT": 320,
+            "ORIGINAL_WIDTH": 320,
+            "CONF_THRESHOLD": 0.5,
+            "NMS_THRESHOLD": 0.5,
+            "NUMBER_CLASS": 2
+        }
+    },
+    "FunctionThreshold": {     
+        "default": 0.4
+    },
+    "GluePathInspection": {
+        "roi_list": [[290 , 700 , 360, 2450], 
+                    [2700, 700 , 360, 2450], 
+                    [290 , 2810, 360, 2450],
+                    [2700, 2810, 360, 2450], 
+                    [290 , 700, 2450, 360 ], 
+                    [4790, 700, 2450, 360 ]],
+        "position_list": ["tl", "tr", "bl", "br", "l", "r"]
+    }
+
+}

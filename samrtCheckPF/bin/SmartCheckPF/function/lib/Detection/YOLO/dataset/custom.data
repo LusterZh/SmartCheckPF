@@ -1,0 +1,4 @@
+classes= 3
+train=E:/lishizhen/workSpace/mmdetection/data/patch/patchs/ChassisScrews_all/ALL_resize/yolov3/train.txt
+valid=E:/lishizhen/workSpace/mmdetection/data/patch/patchs/ChassisScrews_all/ALL_resize/yolov3/valid.txt
+names=E:/lishizhen/workSpace/mmdetection/data/patch/patchs/ChassisScrews_all/ALL_resize/yolov3/classes.names

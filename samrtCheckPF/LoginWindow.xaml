@@ -1,0 +1,37 @@
+﻿<Window x:Class="smartCheckPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="250" Width="380">
+    <Grid>
+        <Button x:Name="btn_ok" 
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"  
+                            Content="登录" 
+                            FontSize="20" 
+                            Height="50" 
+                            Width="85"
+                            Margin="50,150,0,0"
+                            Padding="9,3,9,3"
+                            Background="White" Click="Btn_ok_Click"/>
+        <Button x:Name="btn_cancel" 
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"  
+                            Content="退出" 
+                            FontSize="20" 
+                            Height="50" 
+                            Width="85"
+                            Margin="240,150,0,0"
+                            Padding="9,3,9,3"
+                            Background="White" Click="Btn_cancel_Click"/>
+
+        <Label Name="label1" Content="用户名：" FontSize="20" Width="85" Margin="50,5,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top" Height="50"/>
+        <TextBox Name="username" Height="40"  Width="180" Text=""  FontSize="20" HorizontalAlignment="Left"  VerticalAlignment="Top"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" TabIndex="1" Margin="140,10,0,0" SelectionOpacity="1" KeyDown="Username_KeyDown"/>
+        <Label Name="label2" Content="密码：" FontSize="20" Width="65" Margin="70,65,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top" Height="50"/>
+        <!--<TextBox Name="password" Height="40"  Width="180" Text=""  FontSize="20" HorizontalAlignment="Left"  VerticalAlignment="Top"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" TabIndex="1" Margin="140,70,0,0" SelectionOpacity="1"/>-->
+        <PasswordBox Name="password" HorizontalAlignment="Left" FontSize="20" Height="40" Margin="140,70,0,0" TabIndex="2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"  VerticalAlignment="Top" Width="180" KeyDown="Password_KeyDown"/>
+
+    </Grid>
+</Window>

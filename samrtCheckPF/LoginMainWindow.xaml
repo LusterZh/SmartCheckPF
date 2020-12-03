@@ -1,0 +1,29 @@
+﻿<Window x:Class="smartCheckPF.LoginMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:smartCheckPF"
+        mc:Ignorable="d"
+        Title="LoginMainWindow" Height="370" Width="500">
+    <Grid Margin="0,0,0,-2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="21*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="cbProject" FontSize="20"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="32" Margin="174,31,0,0" VerticalAlignment="Top" Width="211"/>
+        <Label x:Name="lbProject" Content="项目：" FontSize="20" HorizontalAlignment="Left" Height="32" Margin="103,30,0,0" VerticalAlignment="Top" Width="66"/>
+        <ComboBox x:Name="cbSKU" FontSize="20"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="32" Margin="174,71,0,0" VerticalAlignment="Top" Width="211"/>
+        <Label x:Name="lbSKU" Content="SKU：" FontSize="20" HorizontalAlignment="Left" Height="32" Margin="102,71,0,0" VerticalAlignment="Top" Width="63"/>
+        <ComboBox x:Name="cbBulid" FontSize="20"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="32" Margin="174,112,0,0" VerticalAlignment="Top" Width="211"/>
+        <Label x:Name="lbBulid" Content="bulid：" FontSize="20" HorizontalAlignment="Left" Height="32" Margin="93,112,0,0" VerticalAlignment="Top" Width="76"/>
+        <ComboBox x:Name="cbStation" FontSize="20"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="32" Margin="174,152,0,0" VerticalAlignment="Top" Width="211"/>
+        <Label x:Name="lbStation" Content="工作站：" FontSize="20" HorizontalAlignment="Left" Height="32" Margin="81,155,0,0" VerticalAlignment="Top" Width="81"/>
+        <ComboBox x:Name="cbLine" FontSize="20"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="32" Margin="174,194,0,0" VerticalAlignment="Top" Width="211"/>
+        <Label x:Name="lbLine" Content="产线：" FontSize="20"  HorizontalAlignment="Left" Height="32" Margin="97,197,0,0" VerticalAlignment="Top" Width="64"/>
+        <ComboBox x:Name="cbPartNum" FontSize="20"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="32" Margin="174,234,0,0" VerticalAlignment="Top" Width="211"/>
+        <Label x:Name="lbPartNum" Content="料号：" FontSize="20"  HorizontalAlignment="Left" Height="32" Margin="97,237,0,0" VerticalAlignment="Top" Width="64"/>
+        <Button Content="确认" HorizontalAlignment="Left" Height="32" Margin="345,280,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

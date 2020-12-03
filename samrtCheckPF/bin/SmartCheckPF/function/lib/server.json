@@ -1,0 +1,44 @@
+{
+    "System": {
+        "max_mission": 3,
+        "use_gpu": false
+    },
+
+    "Detector": {
+        "CenterNet": {
+            "down_ratio": 4,
+            "max_ojbs": 256,
+            "threshold": 0.4,
+            "train": {
+                "train_with_multi_gpu": true,
+                "hm_weight": 1.0,
+                "wh_weight": 0.1,
+                "off_weight": 1.0,
+                "lr": 0.001,
+                "lr_cycle": 200,
+                "batch_size": 12,
+                "max_epoch": 3000,
+                "validation_per_epoch": 5,
+                "loss": "focal"
+            }
+        },
+
+        "YOLOv3": {
+            "train": {
+                "epochs": 2,
+                "batch_size": 4,
+                "gradient_accumulations": 2,
+                "model_def": "../Detection/YOLO/models/Darknet_YOLOv3.cfg",
+                "data_config": "../Detection/YOLO/dataset/custom.data",
+                "pretrained_weights": "",
+                "n_cpu": 4,
+                "YOLO_INPUT_SIZE": 416,
+                "checkpoint_interval": 1,
+                "evaluation_interval": 1,
+                "compute_map": false,
+                "multiscale_training": true
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<UpdateInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppName>SmartCheckPF</AppName>
+  <AppVersion>2.0.1.7</AppVersion>
+  <PublishUrl />
+  <FileExecuteBefore />
+  <ExecuteArgumentBefore />
+  <FileExecuteAfter />
+  <ExecuteArgumentAfter />
+  <ExecuteTimeout>0</ExecuteTimeout>
+  <Desc>更新说明，修复bug</Desc>
+  <Package>update.zip</Package>
+  <MD5>A5B37BF76AD27E3DCA0ABF44EA71B5C4</MD5>
+  <DeleteFileLimits />
+  <DeleteMethod>None</DeleteMethod>
+  <RequiredMinVersion />
+  <PackageSize>770447</PackageSize>
+  <PackagePassword />
+</UpdateInfo>
